@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5000
 
 const requestHandler = async (request, response) => {
     const { method, url } = request;
+    console.log('REQ', method, url);
 
     try {
         if (method === 'POST' && url === '/inspireme') {
