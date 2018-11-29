@@ -14,6 +14,7 @@ const requestHandler = async (request, response) => {
     try {
         if (method === 'POST' && url === '/inspireme') {
             const message = await commands.inspireme();
+            response.setHeader('Content-Type', 'application/json');
             response.write(JSON.stringify(message));
         } else {
             response.write('Nothing to see here');
