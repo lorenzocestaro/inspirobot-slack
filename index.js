@@ -1,6 +1,6 @@
 'use strict';
 
-const http = require('http');
+const https = require('https');
 
 const commands = require('./commands');
 
@@ -25,5 +25,5 @@ const requestHandler = async (request, response) => {
 };
 
 
-http.createServer(requestHandler)
+https.createServer(requestHandler)
     .listen(5000, () => {console.log("server start at port 5000")});
