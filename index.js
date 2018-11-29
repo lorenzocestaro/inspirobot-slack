@@ -4,6 +4,8 @@ const https = require('https');
 
 const commands = require('./commands');
 
+const PORT = process.env.PORT || 5000
+
 
 const requestHandler = async (request, response) => {
     const { method, url } = request;
@@ -26,4 +28,4 @@ const requestHandler = async (request, response) => {
 
 
 https.createServer(requestHandler)
-    .listen(5000, () => {console.log("server start at port 5000")});
+    .listen(PORT, () => {console.log(`server start at port ${PORT}`)});
