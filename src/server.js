@@ -2,10 +2,10 @@
 
 const http = require('http');
 
-const requestHandler = require('./request.handler');
+const router = require('./router');
 
 const PORT = process.env.PORT || 5000;
 
-http.createServer(requestHandler).listen(PORT, () => {
+http.createServer(router).listen(PORT, () => {
   console.log(`server start at port ${PORT}`);
 });

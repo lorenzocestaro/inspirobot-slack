@@ -3,7 +3,7 @@
 const inspirobot = require('./inspirobot');
 const slack = require('./slack');
 
-const requestHandler = async (request, response) => {
+const router = async (request, response) => {
   const { method, url } = request;
 
   try {
@@ -27,4 +27,4 @@ const requestHandler = async (request, response) => {
   }
 };
 
-module.exports = requestHandler;
+module.exports = router;
