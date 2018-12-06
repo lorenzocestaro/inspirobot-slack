@@ -1,17 +1,17 @@
 const { formatQuoteMessage } = require('./slack');
 
 describe('Slack message formatter', () => {
-    it('should return teh formatted response with default text', () => {
-        const message = formatQuoteMessage({ image_url: 'test_url' });
+    it('should return the formatted response with default text', () => {
+        const message = formatQuoteMessage({ imageUrl: 'test_url' });
         expect(message).toEqual({
             attachments: [{ image_url: 'test_url' }],
             response_type: 'in_channel',
             text: 'Get inspired!',
         });
     });
-    it('should return teh formatted response with custom text', () => {
+    it('should return the formatted response with custom text', () => {
         const message = formatQuoteMessage({
-            image_url: 'test_url',
+            imageUrl: 'test_url',
             text: 'Custom message',
         });
         expect(message).toEqual({
