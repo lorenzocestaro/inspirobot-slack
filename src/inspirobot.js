@@ -1,12 +1,12 @@
 'use strict';
 
-const http = require('http');
+const https = require('https');
 
 function generateQuote() {
   return new Promise((resolve, reject) => {
-    const url = 'http://inspirobot.me/api?generate=true';
+    const url = 'https://inspirobot.me/api?generate=true';
     let image_url = '';
-    http
+    https
       .get(url, res => {
         res.on('data', chunk => {
           image_url = image_url + chunk;
