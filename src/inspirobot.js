@@ -1,19 +1,17 @@
-'use strict';
-
 const https = require('https');
 
 function generateQuote() {
     return new Promise((resolve, reject) => {
         const url = 'https://inspirobot.me/api?generate=true';
-        let image_url = '';
+        let imageUrl = '';
         https
             .get(url, res => {
                 res.on('data', chunk => {
-                    image_url = image_url + chunk;
+                    imageUrl += chunk;
                 });
                 res.on('end', () => {
                     console.log(`Inspirobot responded with code: ${res.statusCode}`);
-                    resolve(image_url);
+                    resolve(imageUrl);
                 });
             })
             .on('error', reject);

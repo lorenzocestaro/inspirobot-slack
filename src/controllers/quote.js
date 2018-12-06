@@ -1,5 +1,3 @@
-'use strict';
-
 const { formatQuoteMessage } = require('../slack');
 const inspirobot = require('../inspirobot');
 

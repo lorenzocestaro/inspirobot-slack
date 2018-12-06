@@ -1,5 +1,3 @@
-'use strict';
-
 const { home, notFound, quote } = require('./controllers');
 
 const routingTable = {
@@ -12,8 +10,6 @@ const routingTable = {
     },
 };
 
-const route = ({ method, url }) => {
-    return (routingTable[url] && routingTable[url][method]) || notFound;
-};
+const route = ({ method, url }) => (routingTable[url] && routingTable[url][method]) || notFound;
 
 module.exports = { route };

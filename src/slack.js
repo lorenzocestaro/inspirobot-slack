@@ -1,9 +1,7 @@
-'use strict';
-
-function formatQuoteMessage({ image_url, text = 'Get inspired!' }) {
-    if (Boolean(image_url)) {
+function formatQuoteMessage({ imageUrl, text = 'Get inspired!' }) {
+    if (imageUrl) {
         return {
-            attachments: [{ image_url }],
+            attachments: [{ image_url: imageUrl }],
             response_type: 'in_channel',
             text,
         };

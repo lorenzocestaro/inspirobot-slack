@@ -1,5 +1,3 @@
-'use strict';
-
 const router = require('./router');
 
 const app = async (request, response) => {
