@@ -1,5 +1,5 @@
 # inspirobot-slack
-_Barebones, no dependencies, Node.js server to integrate inspirobot on slack._
+_Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
 
 Supports slack's `POST` requests generated from slash commands.
 
