@@ -1,41 +1,19 @@
 'use strict';
 
-const inspirobot = require('./inspirobot');
-const slack = require('./slack');
+const { home, notFound, quote } = require('./controllers');
 
 const routingTable = {
-  quote: {
-    GET: async ({ response }) => {
-      const quoteUrl = await inspirobot.generateQuote();
-      response.setHeader('Content-Type', 'text/plain');
-      response.write(quoteUrl);
-    },
-    POST: async ({ response }) => {
-      const quoteUrl = await inspirobot.generateQuote();
-      const body = slack.formatQuoteMessage({ image_url: quoteUrl });
-      response.setHeader('Content-Type', 'application/json');
-      response.write(JSON.stringify(body));
-    },
+  '/': {
+    GET: home.get,
   },
-  notFound: ({ response }) => response.write('Nothing to see here.'),
+  '/quote': {
+    GET: quote.get,
+    POST: quote.post,
+  },
 };
 
-const router = async (request, response) => {
-  const { method, url } = request;
-  const route = url.slice(1);
-
-  try {
-    const handler =
-      (routingTable[route] && routingTable[route][method]) ||
-      routingTable.notFound;
-    await handler({ request, response });
-  } catch (error) {
-    console.error(error);
-    response.status(500);
-    response.write(error.message);
-  } finally {
-    response.end();
-  }
+const route = ({ method, url }) => {
+  return (routingTable[url] && routingTable[url][method]) || notFound;
 };
 
-module.exports = router;
+module.exports = { route };
