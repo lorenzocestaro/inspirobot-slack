@@ -20,11 +20,13 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "jest": "^23.6.0",
+    "nock": "^10.0.3",
     "prettier": "1.15.3"
   }
 }
