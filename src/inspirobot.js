@@ -11,7 +11,10 @@ function generateQuote() {
         res.on('data', chunk => {
           image_url = image_url + chunk;
         });
-        res.on('end', () => resolve(image_url));
+        res.on('end', () => {
+          console.log(`Inspirobot responded with code: ${res.statusCode}`);
+          resolve(image_url);
+        });
       })
       .on('error', reject);
   });
