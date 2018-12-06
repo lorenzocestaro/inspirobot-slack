@@ -1,8 +1,11 @@
 # inspirobot-slack
-Barebones, no dependencies, Node.js server to integrate inspirobot on slack.
+_Barebones, no dependencies, Node.js server to integrate inspirobot on slack._
+
 Supports slack's `POST` requests generated from slash commands.
+
 ---
 **Get an inspirobot quote url as a Slack message**
+
 Returns json data with the Slack's message.
 - **URL:** `/quote`
 - **Method:**  POST`
