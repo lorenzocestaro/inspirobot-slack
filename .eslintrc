@@ -4,5 +4,8 @@
     "env": {
       "node": true,
       "jest/globals": true
+    },
+    "rules": {
+        "no-console": "off"
     }
 }
