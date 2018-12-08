@@ -20,13 +20,13 @@ describe('Slack message formatter', () => {
             text: 'Custom message',
         });
     });
-    it('should throw an error if image_url is not supplied', () => {
-        expect(() => formatQuoteMessage({})).toThrow(TypeError);
-        expect(() => formatQuoteMessage('test_url')).toThrow(TypeError);
-        expect(() => formatQuoteMessage({ extra_param: 2 })).toThrow(TypeError);
-        expect(() => formatQuoteMessage({ text: 'Custom message' })).toThrow(TypeError);
-    });
     it('should throw an error if image_url is empty', () => {
         expect(() => formatQuoteMessage({ image_url: '' })).toThrow(TypeError);
     });
+    it.each([{}, 'test_url', { extra_param: 2 }, { text: 'Custom message' }])(
+        'should throw an error if image_url is not supplied',
+        input => {
+            expect(() => formatQuoteMessage(input)).toThrow(TypeError);
+        },
+    );
 });
