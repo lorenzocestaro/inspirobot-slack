@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Travis CI integration
+- Code climate reports and badges
+- NPM version badge
 
 ## [1.1.1] - 2018-12-08
 ### Added
