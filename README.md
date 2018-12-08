@@ -1,5 +1,7 @@
 # inspirobot-slack
-![Build Status](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)
+![build](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)
+![codecov](https://codecov.io/gh/lorenzocestaro/inspirobot-slack/branch/master/graph/badge.svg)
+![maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)
 ![npm version](https://badge.fury.io/js/inspirobot-slack.svg)
 
 _Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
