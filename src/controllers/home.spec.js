@@ -16,9 +16,9 @@ describe('GET /', () => {
         await get({ response: responseStub });
         expect(responseStub.statusCode).toBe(200);
     });
-    it('should set the Content-Type header to text/plain', async () => {
+    it('should set the Content-Type header to text/markdown', async () => {
         await get({ response: responseStub });
-        expect(responseStub.setHeader).toBeCalledWith('Content-Type', 'text/plain');
+        expect(responseStub.setHeader).toBeCalledWith('Content-Type', 'text/markdown');
     });
     it('should write the project README as response body', async () => {
         const readme = readFileSync('README.md', 'utf-8')
