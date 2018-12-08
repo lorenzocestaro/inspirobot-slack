@@ -20,7 +20,7 @@
     "scripts": {
         "start": "node src/server.js",
         "lint": "npx prettier -l src/**/*.js && eslint src/**",
-        "test": "npm run lint && jest src",
+        "test": "npm run lint && jest src --coverage",
         "coverage": "jest --collectCoverageFrom=src/**.js --coverage"
     },
     "license": "MIT",
