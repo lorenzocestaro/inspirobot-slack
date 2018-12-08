@@ -21,7 +21,7 @@ describe('GET /', () => {
         expect(responseStub.setHeader).toBeCalledWith('Content-Type', 'text/markdown');
     });
     it('should write the project README as response body', async () => {
-        const readme = readFileSync('README.md', 'utf-8')
+        const readme = readFileSync('README.md', 'utf-8');
         await get({ response: responseStub });
         expect(responseStub.write).toBeCalledWith(readme);
     });

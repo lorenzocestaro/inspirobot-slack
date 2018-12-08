@@ -50,10 +50,12 @@ describe('POST /', () => {
     });
     it('should write a slack response as response body', async () => {
         await post({ response: responseStub });
-        expect(responseStub.write).toBeCalledWith(JSON.stringify({
-            attachments: [{ image_url: 'generated_url' }],
-            response_type: 'in_channel',
-            text: 'Get inspired!',
-        }));
+        expect(responseStub.write).toBeCalledWith(
+            JSON.stringify({
+                attachments: [{ image_url: 'generated_url' }],
+                response_type: 'in_channel',
+                text: 'Get inspired!',
+            }),
+        );
     });
 });
