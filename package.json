@@ -19,8 +19,8 @@
     "main": "src/server.js",
     "scripts": {
         "start": "node src/server.js",
-        "lint": "eslint src/**",
-        "test": "jest src",
+        "lint": "npx prettier -l src/**/*.js && eslint src/**",
+        "test": "npm run lint && jest src",
         "coverage": "jest --collectCoverageFrom=src/**.js --coverage"
     },
     "license": "MIT",
