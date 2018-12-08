@@ -1,7 +1,8 @@
 # inspirobot-slack
-_Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
-
 ![Build Status](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)
+![npm version](https://badge.fury.io/js/inspirobot-slack.svg)
+
+_Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
 
 Supports slack's `POST` requests generated from slash commands.
 
