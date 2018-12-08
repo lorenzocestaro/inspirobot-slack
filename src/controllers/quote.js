@@ -3,7 +3,6 @@ const inspirobot = require('../inspirobot');
 
 const get = async ({ response }) => {
     const quoteUrl = await inspirobot.generateQuote();
-    console.log('URL', quoteUrl);
     response.statusCode = 200;
     response.setHeader('Content-Type', 'text/plain');
     response.write(quoteUrl);
@@ -12,7 +11,7 @@ const get = async ({ response }) => {
 
 const post = async ({ response }) => {
     const quoteUrl = await inspirobot.generateQuote();
-    const body = formatQuoteMessage({ image_url: quoteUrl });
+    const body = formatQuoteMessage({ imageUrl: quoteUrl });
     response.statusCode = 200;
     response.setHeader('Content-Type', 'application/json');
     response.write(JSON.stringify(body));
