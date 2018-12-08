@@ -1,6 +1,6 @@
 # inspirobot-slack
 ![build](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)
-![codecov](https://codecov.io/gh/lorenzocestaro/inspirobot-slack/branch/master/graph/badge.svg)
+![coverage](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/test_coverage)
 ![maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)
 ![npm version](https://badge.fury.io/js/inspirobot-slack.svg)
 
