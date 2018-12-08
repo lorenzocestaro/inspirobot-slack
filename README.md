@@ -1,8 +1,8 @@
 # inspirobot-slack
-![build](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)
-![coverage](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/test_coverage)
-![maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)
-![npm version](https://badge.fury.io/js/inspirobot-slack.svg)
+[![Build Status](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)](https://travis-ci.org/lorenzocestaro/inspirobot-slack)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/test_coverage)](https://codeclimate.com/github/lorenzocestaro/inspirobot-slack/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)](https://codeclimate.com/github/lorenzocestaro/inspirobot-slack/maintainability)
+[![npm version](https://badge.fury.io/js/inspirobot-slack.svg)](https://badge.fury.io/js/inspirobot-slack)
 
 _Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
 
