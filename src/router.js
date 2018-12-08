@@ -12,4 +12,4 @@ const routingTable = {
 
 const route = ({ method, url }) => (routingTable[url] && routingTable[url][method]) || notFound;
 
-module.exports = { route };
+module.exports = { route, routingTable };
