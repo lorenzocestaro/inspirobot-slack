@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: vDcS4ENqQx/LgckM6C1i6m6RwOCDDYns/nmIBG9uW1FePpVsLpcXDIlEn5U4CcebOtdznmdMM5pnmCaPTJFxxs5p8yHnaeEms45oxthakrlf48pxXxHLFzYYcvOaOp4wUJVm1x1N30UaaPx3a+nNhZR/odwcXOGX34jdVCwHJMmwF5UE8PNXPtdidIefR/LYQClUsIjfLDOezPnnJU8iTYVfunxUUH1DsXEltEDqn4rGC3E7trouBvsWLxxdlknGyMg62daXSiblbwVTysZ7MyBYOQeRl3dx1Y/UnI593g5AQaebo/hpftPlfLfuaal4TbbkTTwt+WAabFuqMq2zqFCp087wBfBkS9vB3UxreIilE+WPDGr5aAR/U8nqKvBBuZRSzIWC2veMOJ83GqVzHkh+OlIm6BX/6DzU3SfluOJbPSKIpQYJv1TU/kWkWixlLbTKlMsDg5l/fvoC88JqllRYUiBOluBdqrdQS/3RzV03g9NLt7cQrXTBG6laDDhbzgzg4z38AN9CCgGCibRqa5pJb0Rr+/+f3hD+SQOEWhfATFbnWkl80if5QKr5Yf0vlPf0JYhxpv8OGLknpp3i3peAhB5/gsKx36j1rKEaN1MyseSg6Np92n3VLI7uywcEm6Htu1h7T0GC0BG/B5qMs2bUywUVNRTiXxfRKJ8pzfM=
+  on:
+    all_branches: true
+    tags: true
