@@ -1,3 +1,4 @@
+const errorHandler = require('./errorHandler');
 const router = require('./router');
 
 const app = async (request, response) => {
@@ -6,9 +7,7 @@ const app = async (request, response) => {
         await handler({ request, response });
         response.statusCode = 200;
     } catch (error) {
-        console.error(error);
-        response.statusCode = 500;
-        response.write(error.message);
+        errorHandler({ error, response });
     } finally {
         response.end();
     }
