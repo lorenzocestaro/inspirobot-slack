@@ -9,7 +9,7 @@ _Barebones, no dependencies, Node.js server to integrate [inspirobot](http://ins
 Inspiration on the workplace is just a message away.
 
 <p align="center">
-  <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024" />
+    <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif"/>
 </p>
 
 ---
