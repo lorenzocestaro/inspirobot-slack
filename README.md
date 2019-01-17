@@ -6,9 +6,41 @@
 
 _Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
 
-Supports slack's `POST` requests generated from slash commands.
+Inspiration on the workplace is just a message away.
+
+<p align="center">
+  <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024" />
+</p>
 
 ---
+## Deploy
+### Heroku
+To deploy your own instance of `inspirobot-slack` on [Heroku](https://www.heroku.com/home):
+- Fork the repository.
+- [Create an Heroku account](https://signup.heroku.com/login), if you are not registered yet.
+- Create a new heroku app.
+
+You can choose the deployment method you prefer, I suggest linking your app to
+__GitHub__ and syncing upstream to be always up to date.
+
+More on deploying with Heroku [here](https://devcenter.heroku.com/categories/deployment).
+
+### Docker
+Images for all project versions are available.
+```bash
+$ docker pull lorenzocestaro/inspirobot-slack
+$ docker run -p 80:<EXTERNAL_PORT> lorenzocestaro/inspirobot-slack
+```
+
+## Create a Slack app
+To add inspirobot to your Slack workspace:
+- [Create a new app](https://api.slack.com/apps?new_app=1).
+- Add a [slash command](https://api.slack.com/slash-commands) to your app.
+- Configure your slash command to sent a request to your deployed service on the
+`/quote` route.
+- Install your app as an [internal integration](https://api.slack.com/internal-integrations) for your workspace.
+
+## API
 **Get an inspirobot quote url as a Slack message**
 
 Returns json data with the Slack's message.
