@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- Default server port to 80
 - GET / responds with a permanent redirect to the GitHub repository
 
 ## [1.1.2] - 2018-12-08
