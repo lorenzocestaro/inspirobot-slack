@@ -1,18 +1,19 @@
 # inspirobot-slack
+
+_Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
+
+_Inspiration on the workplace is just a message away._
+
 [![Build Status](https://travis-ci.org/lorenzocestaro/inspirobot-slack.svg?branch=master)](https://travis-ci.org/lorenzocestaro/inspirobot-slack)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/test_coverage)](https://codeclimate.com/github/lorenzocestaro/inspirobot-slack/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)](https://codeclimate.com/github/lorenzocestaro/inspirobot-slack/maintainability)
 [![npm version](https://badge.fury.io/js/inspirobot-slack.svg)](https://badge.fury.io/js/inspirobot-slack)
 
-_Barebones, no dependencies, Node.js server to integrate [inspirobot](http://inspirobot.me/) on slack._
-
-Inspiration on the workplace is just a message away.
-
 <p align="center">
-    <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif"/>
+  <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024"/>
 </p>
 
----
+
 ## Deploy
 ### Heroku
 To deploy your own instance of `inspirobot-slack` on [Heroku](https://www.heroku.com/home):
