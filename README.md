@@ -14,9 +14,9 @@ _Inspiration on the workplace is just a message away._
 </p>
 
 - [Step 1: Deploy](#step-1--deploy)
-  * [Option 1: Host on Heroku](#option-1--host-on-heroku)
-  * [Option 2: Use Docker (run everywhere)](#option-2--use-docker--run-everywhere-)
-- [Step 2: Create a Slack app](#step-2--create-a-slack-app)
+  * [Option 1: Host on Heroku](#option-1-host-on-heroku)
+  * [Option 2: Use Docker (run everywhere)](#option-2-use-docker-run-everywhere)
+- [Step 2: Create a Slack app](#step-2-create-a-slack-app)
 - [API](#api)
 
 ## Step 1: Deploy
