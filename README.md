@@ -13,9 +13,14 @@ _Inspiration on the workplace is just a message away._
   <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024"/>
 </p>
 
+- [Step 1: Deploy](#step-1--deploy)
+  * [Option 1: Host on Heroku](#option-1--host-on-heroku)
+  * [Option 2: Use Docker (run everywhere)](#option-2--use-docker--run-everywhere-)
+- [Step 2: Create a Slack app](#step-2--create-a-slack-app)
+- [API](#api)
 
-## Deploy
-### Heroku
+## Step 1: Deploy
+### Option 1: Host on Heroku
 To deploy your own instance of `inspirobot-slack` on [Heroku](https://www.heroku.com/home):
 - Fork the repository.
 - [Create an Heroku account](https://signup.heroku.com/login), if you are not registered yet.
@@ -26,14 +31,14 @@ __GitHub__ and syncing upstream to be always up to date.
 
 More on deploying with Heroku [here](https://devcenter.heroku.com/categories/deployment).
 
-### Docker
+### Option 2: Use Docker (run everywhere)
 Images for all project versions are available.
 ```bash
 $ docker pull lorenzocestaro/inspirobot-slack
 $ docker run -p 80:<EXTERNAL_PORT> lorenzocestaro/inspirobot-slack
 ```
 
-## Create a Slack app
+## Step 2: Create a Slack app
 To add inspirobot to your Slack workspace:
 - [Create a new app](https://api.slack.com/apps?new_app=1).
 - Add a [slash command](https://api.slack.com/slash-commands) to your app.
