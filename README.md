@@ -9,15 +9,15 @@ _Inspiration on the workplace is just a message away._
 [![Maintainability](https://api.codeclimate.com/v1/badges/39bc3bdb846fb0460f94/maintainability)](https://codeclimate.com/github/lorenzocestaro/inspirobot-slack/maintainability)
 [![npm version](https://badge.fury.io/js/inspirobot-slack.svg)](https://badge.fury.io/js/inspirobot-slack)
 
-<p align="center">
-  <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024"/>
-</p>
-
-- [Step 1: Deploy](#step-1--deploy)
+- [Step 1: Deploy](#step-1-deploy)
   * [Option 1: Host on Heroku](#option-1-host-on-heroku)
   * [Option 2: Use Docker (run everywhere)](#option-2-use-docker-run-everywhere)
 - [Step 2: Create a Slack app](#step-2-create-a-slack-app)
 - [API](#api)
+
+<p align="center">
+  <img src="https://github.com/lorenzocestaro/inspirobot-slack/blob/master/docs/usage-example.gif" width="1024"/>
+</p>
 
 ## Step 1: Deploy
 ### Option 1: Host on Heroku
